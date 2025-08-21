@@ -1,27 +1,127 @@
 {
-  "signup_cta": {"off": "Sign up", "subtle": "Start Session 0 (Sign up)", "bold": "Begin Session 0"},
-  "login_cta": {"off": "Log in", "subtle": "Resume Campaign (Log in)", "bold": "Resume Campaign"},
-  "feed_title": {"off": "Feed", "subtle": "Tavern’s Quest Board (Feed)", "bold": "Tavern’s Quest Board"},
-  "groups_title": {"off": "Groups", "subtle": "Guilds (Groups)", "bold": "Guilds"},
-  "group_feed": {"off": "Group Feed", "subtle": "Guild Hall (Group Feed)", "bold": "Guild Hall"},
-  "settings": {"off": "Settings", "subtle": "DM Screen (Settings)", "bold": "DM Screen"},
-  "help": {"off": "Help", "subtle": "Sage’s Library (Help)", "bold": "Sage’s Library"},
-  "create_guild": {"off": "Create Group", "subtle": "Draft a Guild Charter (Create Group)", "bold": "Draft a Guild Charter"},
-  "post_cta": {"off": "Create Post", "subtle": "Raise a Toast (Create Post)", "bold": "Raise a Toast"},
-  "report": {"off": "Report", "subtle": "Call the Town Guard (Report)", "bold": "Call the Town Guard"},
-  "loading": {"off": "Loading…", "subtle": "Rolling for initiative…", "bold": "Rolling for initiative…"},
-  "onboarding_title": {"off": "Onboarding", "subtle": "Adventurer Training (Onboarding)", "bold": "Adventurer Training"},
-  "onboarding_handle": {"off": "Choose handle and avatar", "subtle": "Forge your persona (handle & avatar)", "bold": "Forge your persona"},
-  "onboarding_interests": {"off": "Select interests", "subtle": "Chart your quests (Select interests)", "bold": "Chart your quests"},
-  "onboarding_safety": {"off": "Set safety tools", "subtle": "Establish boundaries (Safety tools)", "bold": "Establish boundaries"},
-  "onboarding_follow": {"off": "Follow players and guilds", "subtle": "Find fellow adventurers (Follow others)", "bold": "Find fellow adventurers"},
-  "onboarding_first_post": {"off": "Make your first post", "subtle": "Raise your first toast (Make a post)", "bold": "Raise your first toast"},
-  "onboarding_next": {"off": "Next", "subtle": "Continue", "bold": "Continue"},
-  "onboarding_finish": {"off": "Finish", "subtle": "Complete Journey", "bold": "Complete Journey"},
-  "onboarding_handle_label": {"off": "Handle", "subtle": "Adventurer Handle", "bold": "Adventurer Handle"},
-  "onboarding_avatar_label": {"off": "Avatar URL", "subtle": "Portrait URL", "bold": "Portrait URL"},
-  "onboarding_interests_label": {"off": "Interests", "subtle": "Quest Interests", "bold": "Quest Interests"},
-  "onboarding_safety_label": {"off": "Safety notes", "subtle": "Boundaries", "bold": "Boundaries"},
-  "onboarding_follow_label": {"off": "Suggestions", "subtle": "Companions", "bold": "Companions"},
-  "onboarding_post_label": {"off": "Say something", "subtle": "Share a toast", "bold": "Share a toast"}
+  "signup_cta": {
+    "off": "Sign up",
+    "subtle": "Start Session 0 (Sign up)",
+    "bold": "Begin Session 0"
+  },
+  "login_cta": {
+    "off": "Log in",
+    "subtle": "Resume Campaign (Log in)",
+    "bold": "Resume Campaign"
+  },
+  "feed_title": {
+    "off": "Feed",
+    "subtle": "Tavern’s Quest Board (Feed)",
+    "bold": "Tavern’s Quest Board"
+  },
+  "groups_title": {
+    "off": "Groups",
+    "subtle": "Guilds (Groups)",
+    "bold": "Guilds"
+  },
+  "group_feed": {
+    "off": "Group Feed",
+    "subtle": "Guild Hall (Group Feed)",
+    "bold": "Guild Hall"
+  },
+  "settings": {
+    "off": "Settings",
+    "subtle": "DM Screen (Settings)",
+    "bold": "DM Screen"
+  },
+  "help": {
+    "off": "Help",
+    "subtle": "Sage’s Library (Help)",
+    "bold": "Sage’s Library"
+  },
+  "create_guild": {
+    "off": "Create Group",
+    "subtle": "Draft a Guild Charter (Create Group)",
+    "bold": "Draft a Guild Charter"
+  },
+  "post_cta": {
+    "off": "Create Post",
+    "subtle": "Raise a Toast (Create Post)",
+    "bold": "Raise a Toast"
+  },
+  "report": {
+    "off": "Report",
+    "subtle": "Call the Town Guard (Report)",
+    "bold": "Call the Town Guard"
+  },
+  "loading": {
+    "off": "Loading…",
+    "subtle": "Rolling for initiative…",
+    "bold": "Rolling for initiative…"
+  },
+  "onboarding_title": {
+    "off": "Onboarding",
+    "subtle": "Adventurer Training (Onboarding)",
+    "bold": "Adventurer Training"
+  },
+  "onboarding_handle": {
+    "off": "Choose handle and avatar",
+    "subtle": "Forge your persona (handle & avatar)",
+    "bold": "Forge your persona"
+  },
+  "onboarding_interests": {
+    "off": "Select interests",
+    "subtle": "Chart your quests (Select interests)",
+    "bold": "Chart your quests"
+  },
+  "onboarding_safety": {
+    "off": "Set safety tools",
+    "subtle": "Establish boundaries (Safety tools)",
+    "bold": "Establish boundaries"
+  },
+  "onboarding_follow": {
+    "off": "Follow players and guilds",
+    "subtle": "Find fellow adventurers (Follow others)",
+    "bold": "Find fellow adventurers"
+  },
+  "onboarding_first_post": {
+    "off": "Make your first post",
+    "subtle": "Raise your first toast (Make a post)",
+    "bold": "Raise your first toast"
+  },
+  "onboarding_next": {
+    "off": "Next",
+    "subtle": "Continue",
+    "bold": "Continue"
+  },
+  "onboarding_finish": {
+    "off": "Finish",
+    "subtle": "Complete Journey",
+    "bold": "Complete Journey"
+  },
+  "onboarding_handle_label": {
+    "off": "Handle",
+    "subtle": "Adventurer Handle",
+    "bold": "Adventurer Handle"
+  },
+  "onboarding_avatar_label": {
+    "off": "Avatar URL",
+    "subtle": "Portrait URL",
+    "bold": "Portrait URL"
+  },
+  "onboarding_interests_label": {
+    "off": "Interests",
+    "subtle": "Quest Interests",
+    "bold": "Quest Interests"
+  },
+  "onboarding_safety_label": {
+    "off": "Safety notes",
+    "subtle": "Boundaries",
+    "bold": "Boundaries"
+  },
+  "onboarding_follow_label": {
+    "off": "Suggestions",
+    "subtle": "Companions",
+    "bold": "Companions"
+  },
+  "onboarding_post_label": {
+    "off": "Say something",
+    "subtle": "Share a toast",
+    "bold": "Share a toast"
+  }
 }
