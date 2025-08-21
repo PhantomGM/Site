@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dna
+      POSTGRES_PASSWORD: dna
+      POSTGRES_DB: dna
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://dna:dna@db:5432/dna
+      NEXTAUTH_SECRET: changeme
+    depends_on:
+      - db
+volumes:
+  db-data:
