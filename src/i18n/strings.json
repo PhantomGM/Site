@@ -9,5 +9,6 @@
   "create_guild": {"off": "Create Group", "subtle": "Draft a Guild Charter (Create Group)", "bold": "Draft a Guild Charter"},
   "post_cta": {"off": "Create Post", "subtle": "Raise a Toast (Create Post)", "bold": "Raise a Toast"},
   "report": {"off": "Report", "subtle": "Call the Town Guard (Report)", "bold": "Call the Town Guard"},
+  "search": {"off": "Search", "subtle": "Scrying Pool (Search)", "bold": "Scrying Pool"},
   "loading": {"off": "Loading…", "subtle": "Rolling for initiative…", "bold": "Rolling for initiative…"}
 }
