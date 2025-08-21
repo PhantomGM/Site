@@ -4,6 +4,13 @@ import { guildApprove } from '../../../../../lib/notifications'
 
 export async function POST(req: Request, { params }: { params: { slug: string } }) {
   const { membershipId } = await req.json()
-  const membership = await guildApprove(prisma, membershipId)
-  return NextResponse.json(membership)
+  try {
+    const membership = await guildApprove(prisma, membershipId)
+    if (membership.guild.slug !== params.slug) {
+      return NextResponse.json({ error: 'not found' }, { status: 404 })
+    }
+    return NextResponse.json(membership)
+  } catch {
+    return NextResponse.json({ error: 'not found' }, { status: 404 })
+  }
 }
