@@ -4,6 +4,7 @@
   "feed_title": {"off": "Feed", "subtle": "Tavern’s Quest Board (Feed)", "bold": "Tavern’s Quest Board"},
   "groups_title": {"off": "Groups", "subtle": "Guilds (Groups)", "bold": "Guilds"},
   "group_feed": {"off": "Group Feed", "subtle": "Guild Hall (Group Feed)", "bold": "Guild Hall"},
+  "profile_title": {"off": "Profile", "subtle": "Character Sheet (Profile)", "bold": "Character Sheet"},
   "settings": {"off": "Settings", "subtle": "DM Screen (Settings)", "bold": "DM Screen"},
   "help": {"off": "Help", "subtle": "Sage’s Library (Help)", "bold": "Sage’s Library"},
   "create_guild": {"off": "Create Group", "subtle": "Draft a Guild Charter (Create Group)", "bold": "Draft a Guild Charter"},
