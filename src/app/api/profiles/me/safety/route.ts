@@ -1,19 +1,42 @@
 import { NextResponse } from 'next/server'
-import prisma from '../../../../lib/db'
+import { z } from 'zod'
 
-export async function GET(req: Request) {
-  const url = new URL(req.url)
-  const userId = url.searchParams.get('userId')
-  const safety = await prisma.userSafetyPreferences.findUnique({ where: { userId: userId! } })
+import prisma from '../../../../lib/db'
+import { getSession } from '../../../../lib/auth'
+
+const SafetySchema = z.object({
+  lines: z.array(z.string()).optional(),
+  veils: z.array(z.string()).optional(),
+  askFirst: z.array(z.string()).optional(),
+  includeCustomInShare: z.boolean().optional(),
+  shareAnonymizedWithGm: z.boolean().optional()
+})
+
+export async function GET() {
+  const session = await getSession()
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  const safety = await prisma.userSafetyPreferences.findUnique({
+    where: { userId: session.user.id }
+  })
   return NextResponse.json(safety)
 }
 
 export async function PATCH(req: Request) {
-  const data = await req.json()
+  const session = await getSession()
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  const json = await req.json()
+  const data = SafetySchema.parse(json)
+
   const safety = await prisma.userSafetyPreferences.upsert({
-    where: { userId: data.userId },
+    where: { userId: session.user.id },
     update: data,
-    create: { userId: data.userId, ...data }
+    create: { userId: session.user.id, ...data }
   })
   return NextResponse.json(safety)
 }

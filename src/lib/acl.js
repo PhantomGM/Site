@@ -8,4 +8,9 @@ function canViewPost({ viewerId, post, viewerGuildIds, friendIds }) {
   if (post.authorId === viewerId) return true
   return friendIds.includes(post.authorId)
 }
-module.exports = { canViewPost }
+
+function canManageGuild(role) {
+  return role === 'OWNER' || role === 'OFFICER'
+}
+
+module.exports = { canViewPost, canManageGuild }
